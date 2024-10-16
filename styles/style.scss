@@ -1,0 +1,726 @@
+@import 'variables';
+@import 'defaultSettings';
+
+.main-container {
+    max-width: 1500px;
+    background-color: $black;
+    background-image: url('/assets/images/pattern-rings.svg');
+    background-repeat: no-repeat;
+    background-position: -100px 150px;
+    margin: auto;
+}
+
+.header-description-wrapper {
+    background-image: url("/assets/images/pattern-circle.svg"), url("/assets/images/image-profile-desktop.webp");
+    background-position: calc(100% - 435px) 590px, 100% 0;
+    background-size: auto, 500px auto;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+    margin-right: 170px;
+    height: 900px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header-name {
+    color: white;
+    font-size: 32px;
+    letter-spacing: -.44px;
+    font-weight: bold;
+}
+
+.github-icon,
+.frontendmentor-icon,
+.linkedin-icon,
+.twitter-icon {
+    margin-right: 30px;
+}
+
+.adam-keyes-title {
+    position: relative;
+    z-index: 10;
+    color: white;
+    margin-top: 120px;
+    font-size: $headingXL;
+    letter-spacing: -2.5px;
+    line-height: 88px;
+    max-width: 750px;
+}
+
+.span-text {
+    position: relative;
+    display: inline;
+}
+
+.span-text::before {
+    content: "";
+    position: absolute;
+    background: $green;
+    width: 100%;
+    height: 7px;
+    bottom: 5px;
+    left: 0;
+}
+
+.adam-keyes-description {
+    color: $cream;
+    margin-top: 50px;
+    max-width: 450px;
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    font-weight: 500;
+}
+
+.adam-keyes-contact-me {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.29px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.contact-me-span {
+    border-bottom: 3px solid $green;
+    padding-bottom: 16px;
+    transition: all .3s ease;
+}
+
+.adam-keyes-contact-me:hover {
+    color: $green;
+    cursor: pointer;
+}
+
+.line {
+    width: calc(100% - 340px);
+    margin: auto;
+    height: 1.5px;
+    background-color: $grey;
+}
+
+.skills-wrapper {
+    background: url("/assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: 120% 100%;
+    background-color: $black;
+}
+
+.skills-section {
+    margin-left: 170px;
+    margin-right: 170px;
+    padding-top: 50px;
+}
+
+.skills-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.skill-title {
+    color: white;
+    font-size: $headingL;
+}
+
+.skill-expirience {
+    color: $cream;
+}
+
+.projects-and-contact-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.projects-title {
+    color: white;
+    font-size: $headingXL;
+}
+
+.projects-contact-me {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.29px;
+    font-weight: bold;
+}
+
+.projects-contact-me-span {
+    border-bottom: 3px solid $green;
+    padding-bottom: 16px;
+    transition: all .3s ease;
+}
+
+.projects-contact-me:hover {
+    color: $green;
+    cursor: pointer;
+}
+
+.projects-container {
+    margin-left: 170px;
+    margin-right: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-box-large {
+    max-width: calc(100% / 2 - 10px);
+    margin-bottom: 100px;
+}
+
+.image-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(20, 20, 20, 0.7);
+    top: 0;
+    left: 0;
+}
+
+.view-project,
+.view-code {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.29px;
+    line-height: 26px;
+    margin-bottom: 50px;
+    transition: all .2s ease;
+}
+
+.view-project:hover {
+    cursor: pointer;
+    color: $green;
+}
+
+.view-code:hover {
+    cursor: pointer;
+    color: $green;
+}
+
+.view-project-code-span {
+    border-bottom: 3px solid $green;
+    padding-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.project-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: $headingM;
+}
+
+.project-description-box {
+    display: flex;
+}
+
+.project-description {
+    color: $cream;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.view-code-project-mobile {
+    display: flex;
+    margin-top: 25px;
+}
+
+.view-project-mobile,
+.view-code-mobile {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.view-project-mobile-span::before {
+    content: "";
+    position: absolute;
+    background: $green;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+}
+
+.view-code-mobile-span::before {
+    content: "";
+    position: absolute;
+    background: $green;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+}
+
+.view-project-mobile {
+    margin-right: 20px;
+}
+
+.footer-wrapper {
+    background-color: $black-ligter;
+    background-image: url("/assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: -200px 320px;
+}
+
+.footer-contact-description-and-credentials-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 170px;
+    margin-right: 170px;
+    padding-top: 50px;
+    margin-bottom: 230px;
+}
+
+.footer-box {
+    max-width: calc(100% / 2);
+    text-align: left;
+}
+
+.footer-title {
+    color: white;
+    text-transform: capitalize;
+    font-size: $headingXL;
+    margin-bottom: 30px;
+}
+
+.footer-description {
+    color: $cream;
+    font-size: $paragraph-size;
+    line-height: 28px;
+    max-width: 430px;
+}
+
+.credentials-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+    width: 100%;    
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.input-container-error {
+    border-bottom: 1px solid $red;
+}
+
+.input-container-valid {
+    border-bottom: 1px solid $green;
+}
+
+.invalid-message-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invalid-message {
+    color: $red;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    font-weight: 100;
+}
+
+.footer-input {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    letter-spacing: -0.22px;
+    font-weight: 500;
+    color: $cream;
+}
+
+.footer-input::placeholder {
+    color: $grey;
+    font-size: 16px;
+    letter-spacing: -0.22px;
+    text-transform: uppercase;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+}
+
+.footer-input:focus {
+    outline: none;
+    font-size: 16px;
+    letter-spacing: -0.22px;
+    font-weight: 500;
+    color: $cream;
+}
+
+.fa-exclamation-circle {
+    color: $red;
+    font-size: 18px;
+}
+
+.input_message {
+    padding-bottom: 70px;
+}
+
+.send-message-wrapper {
+    width: fit-content;
+    margin-top: 25px;
+    position: relative;
+    left: calc(100% - 145px);
+}
+
+.send-message {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.29px;
+    font-weight: bold;
+}
+
+.send-message-span::before {
+    content: "";
+    position: absolute;
+    background: $green;
+    width: 100%;
+    height: 2px;
+    bottom: -12px;
+    left: 0;
+}
+
+.footer-line {
+    width: calc(100% - 340px);
+    margin: auto;
+    height: 2px;
+    background-color: $cream;
+}
+
+.footer-name-and-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 50px;
+    padding-bottom: 90px;
+}
+
+.footer-adam-keyes {
+    color: white;
+    font-size: 32px;
+    letter-spacing: -0.44px;
+    font-weight: bold;
+}
+
+.github-icon-footer,
+.frontend-mentor-icon-footer,
+.linkedin-icon-footer {
+    margin-right: 25px;
+}
+
+.github-icon-footer,
+.frontend-mentor-icon-footer,
+.linkedin-icon-footer,
+.twitter-icon-footer {
+    fill: white;
+    transition: all .2s ease;
+}
+
+.github-icon-footer:hover,
+.frontend-mentor-icon-footer:hover,
+.linkedin-icon-footer:hover,
+.twitter-icon-footer:hover {
+    fill: $green;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+
+// ----------------------MEDIA QUERIES---------------------
+
+@media only screen and (max-width: 1200px) {
+
+    .main-container {
+        background-image: url('/assets/images/pattern-rings.svg');
+        background-repeat: no-repeat;
+        background-position: -300px 150px;
+    }
+
+    .header-description-wrapper {
+        margin-left: 30px;
+        margin-right: 0;
+        background-image: url("/assets/images/pattern-circle.svg"), url("/assets/images/image-profile-tablet.webp");
+        background-position: calc(100% + 60px) 770px, 100% 0;
+        background-size: auto, 500px auto;
+        background-repeat: no-repeat;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .adam-keyes-title {
+        font-size: 72px;
+        margin-top: 135px;
+        letter-spacing: -2.05px;
+        max-width: 550px;
+    }
+
+    .span-text {
+        max-width: fit-content;
+        display: inline-block;
+    }
+
+    .line {
+        width: calc(100% - 60px);
+        margin-top: 100px;
+    }
+
+    .skills-wrapper {
+        background-position: calc(100% + 360px) 100%;
+    }
+
+    .skills-section {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .projects-and-contact-me-container {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .projects-title {
+        font-size: 72px;
+        letter-spacing: -2.05px;
+    }
+
+    .projects-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .project-box-large {
+        margin-bottom: 70px;
+    }
+
+    .footer-wrapper {
+        background-position: -250px 580px;
+    }
+
+    .footer-contact-description-and-credentials-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 170px;
+    }
+
+    .footer-box {
+        max-width: 430px;
+    }
+
+    .footer-title {
+        font-size: 72px;
+        letter-spacing: -2.05px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer-description {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .credentials-container {
+        padding-left: 0;
+    }
+
+    .footer-line {
+        width: calc(100% - 60px);
+    }
+
+    .footer-name-and-icon-container {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+  }
+
+// -----------------------Mobile media query--------------------
+
+  @media only screen and (max-width: 800px) {
+
+    .header-description-wrapper {
+        text-align: center;
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+
+        background-image: url("/assets/images/pattern-circle.svg"), url("/assets/images/image-profile-mobile.webp");
+        background-position: calc(100% + 60px) 535px, 50% -100px;
+        background-size: auto, auto;
+        background-repeat: no-repeat;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-icons {
+        display: flex;
+        width: 190px;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .github-icon,
+    .frontendmentor-icon,
+    .linkedin-icon,
+    .twitter-icon {
+        margin-right: 0;
+    }
+
+    .adam-keyes-title {
+        text-align: center;
+        margin: auto;
+        max-width: 500px;
+        font-size: 40px;
+        letter-spacing: -1.14px;
+        line-height: 40px;
+        margin-top: 600px;
+    }
+    .adam-keyes-description {
+        margin: auto;
+        margin-top: 30px;
+        max-width: 500px;
+    }
+
+    .span-text::before {
+        content: "";
+        height: 5px;
+        bottom: -5px;
+    }
+
+    .adam-keyes-contact-me {
+        margin-top: 35px;
+    }
+
+    .line {
+        margin-top: 180px;
+        width: calc(100% - 30px);
+    }
+
+    .skills-wrapper {
+        background-position: calc(100% + 360px) 100%;
+        padding-bottom: 50px;
+    }
+
+    .skills-flex {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .skill-box {
+        text-align: center;
+    }
+
+    .skill-title {
+        font-size: 32px;
+    }
+
+    .skills-line {
+        position: relative;
+        bottom: 14px;
+        margin: auto;
+        height: 1.5px;
+        background-color: $grey;
+        width: calc(100% - 30px);
+    }
+
+    .projects-and-contact-me-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .projects-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .projects-title {
+        font-size: 40px;
+        letter-spacing: -1.14px;
+    }
+
+    .project-box-large {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer-wrapper {
+        background-position: -330px 400px;
+    }
+
+    .footer-contact-description-and-credentials-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    .footer-title {
+        font-size: 40px;
+        letter-spacing: -1.14px;
+    }
+
+    .footer-name-and-icon-container {
+        flex-direction: column;
+    }
+
+    .footer-adam-keyes {
+        font-size: 24px;
+        letter-spacing: -0.33px;
+        margin-bottom: 20px;
+    }
+  }
